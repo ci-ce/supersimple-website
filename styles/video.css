@@ -1,0 +1,173 @@
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+}
+
+@media (max-width: 750px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 751px) and (max-width: 999px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+/* .video-preview {
+                width: 300px;
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 15px;
+            }*/
+
+.thumbnail-row {
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.thumbnail {
+    width: 100%;
+
+    /* height: 300px;*/
+    /*object-fit: contain;/* contains all the image in the dimentions set*/
+    /* object-position: right; /* shows the right side  of an image if the img doesn't fit using
+                                  the OBJECT'FIT:COVER , that covers the dementions set */
+    /*border-width: 2px;
+                border-color: red;
+                border-style: solid;
+                */
+    /* display: block;*/
+}
+
+.video-time {
+    
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px;
+    border-radius: 2px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+}
+
+
+.video-info-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+
+.profile-picture {
+    width: 36px;
+    border-radius: 50px;
+}
+
+.profile-picture-container, .channel-picture {
+    position: relative;
+    display: inline-block;
+}
+
+.channel-tooltip {
+    background-color: white;
+    position: absolute;
+    top: 50px;
+
+    width: 200px;
+    padding: 12px;
+    
+    border-radius: 4px;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    z-index: 100;
+    transition: opacity 0.15s;
+}
+
+.profile-picture-container:hover .channel-tooltip,
+.channel-picture:hover .channel-tooltip {
+    opacity: 1;
+}
+
+.channel-tooltip img {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    object-fit: cover;
+    object-position: center;
+    margin-right: 8px;
+}
+.channel-name-tooltip {
+    font-family: Roboto, Arial;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.channel-stats-tooltip {
+    font-family: Roboto, Arial;
+    color: rgb(95, 95, 95);
+    font-size: 14px;
+}
+
+.video-info .video-title-link {
+    color: black;
+    text-decoration: none;
+}
+
+
+.video-title {
+    margin-top: 0px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 1000px) {
+    .video-title {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+/*.video-stats, .video-author {
+                display: inline-block;
+            }*/
+/*the p element is usually a block element that takes the whole ligne, so if we wantto put two p next 
+            to each other we user the DISPLAY var with the INLINE BLOCK, inline block takes only the space needed*/
+
+.video-author,
+.video-stats {
+    font-size: 12px;
+    color: rgb(100, 100, 100);
+}
+
+@media (min-width:1000px) {
+    .video-author,
+    .video-stats {
+        font-size: 14px;
+        }
+}
+
+.video-author {
+    margin-bottom: 4px;
+}
+
+

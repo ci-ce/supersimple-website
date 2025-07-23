@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Grid Practice
+        </title>
+    </head>
+
+    <body style="padding-bottom: 1000px;">
+        <div style="display: grid;
+                grid-template-columns: 100px 100px;">
+
+            <div style="background-color: lightblue;"> div 1</div>
+
+            <div style="background-color: lightpink;"> div 2 
+                <p>text</p>
+            </div>
+
+        </div>
+
+        <div style="margin-top: 30px;
+                display: grid;
+                grid-template-columns: 100px 100px 200px;">
+
+            <div style="background-color: lightblue;"> 100px </div>
+
+            <div style="background-color: lightpink;"> 100px 
+                <p>text</p>
+            </div>
+
+            <div style="background-color: lightblue;"> 200px </div>
+
+            <div style="background-color: lightpink;"> 100px</div>
+
+        </div>
+
+        <div style="margin-top: 30px;
+                    display: grid;
+                    grid-template-columns: 100px 1fr;">
+                        <!--fr:free space, takes up the remaining space and is flexible depending if u are 
+                            making the tab big or small-->
+        
+            <div style="background-color: lightblue;"> 100px </div>
+        
+            <div style="background-color: lightpink;"> 1 fr </div>
+        
+        </div>
+
+        <div style="margin-top: 30px;
+                    display: grid;
+                    grid-template-columns: 100px 1fr 2fr;">
+                        <!--1fr 1fr :both 1 fr will take up the remaining space equaly but, 1fr 2fr will 
+                            take up the remaining space with 2fr twice the siza of 1fr -->
+        
+            <div style="background-color: lightblue;"> 100px </div>
+        
+            <div style="background-color: lightpink;"> 1 fr </div>
+
+            <div style="background-color: lightblue;"> 2fr </div>
+        
+        </div>
+
+        <div style="margin-top: 30px;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    column-gap: 20px;
+                    row-gap: 20px;">
+        
+            <div style="background-color: lightblue; height: 200px;"> 1 fr </div>
+        
+            <div style="background-color: lightpink; height: 200px;"> 1 fr </div>
+        
+            <div style="background-color: lightblue; height: 200px;"> 1 fr </div>
+
+            <div style="background-color: lightpink; height: 200px;"> 1 fr </div>
+
+            <div style="background-color: lightblue; height: 200px;"> 1 fr </div>
+            
+            <div style="background-color: lightpink; height: 200px;"> 1 fr </div>
+        
+        </div>
+    </body>
+</html>
